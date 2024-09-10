@@ -1,7 +1,7 @@
 # <u>TwitterAPI : Event Driven - Distributed Microservices</u> 
 This project is a comprehensive example of building a microservices architecture using an event-driven approach. The project involves mocking a stream of tweets and processing them through a set of decoupled microservices. The architecture is designed to be resilient, scalable, and maintainable, leveraging the latest tools, frameworks, and best practices in microservices development.
 
-![](https://github.com/amanbhardwaj12072003/TwitterAPI_Event_Driven_Distributed_Microservices/tree/main/Images)
+![](https://github.com/amanbhardwaj12072003/TwitterAPI_Event_Driven_Distributed_Microservices/blob/main/Images/High_Level_Diagram.png)
 
 ## Overview - Event-Driven Architecture
 
