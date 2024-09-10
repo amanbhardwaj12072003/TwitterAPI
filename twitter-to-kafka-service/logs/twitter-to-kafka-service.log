@@ -12,3 +12,8 @@
 2024-09-10 18:11:45 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum Fusce Maecenas ultricies purus pulvinar massa elit Microservices Lorem libero consectetuer consectetuer congue massa amet
 2024-09-10 18:11:55 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor libero porttitor massa Kafka lectus pulvinar
 2024-09-10 18:12:05 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus sit congue sit sed Microservices amet Maecenas adipiscing
+2024-09-10 18:12:15 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit adipiscing massa libero elit Elasticsearch massa libero congue pulvinar
+2024-09-10 18:12:26 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet Fusce consectetuer magna sit massa Kafka purus ipsum consectetuer Lorem
+2024-09-10 18:12:36 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus purus Lorem dolor ultricies Kafka Maecenas malesuada pulvinar lectus
+2024-09-10 18:12:46 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere congue Maecenas massa consectetuer posuere malesuada Java Fusce sit purus amet purus posuere
+2024-09-10 18:12:56 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit massa libero magna massa posuere posuere amet Microservices porttitor dolor sed sit libero adipiscing ultricies
