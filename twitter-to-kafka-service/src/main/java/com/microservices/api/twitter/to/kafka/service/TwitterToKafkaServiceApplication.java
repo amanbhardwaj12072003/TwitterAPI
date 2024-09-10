@@ -14,7 +14,6 @@ import java.util.Arrays;
 @SpringBootApplication
 @ComponentScan(basePackages = "com.microservices.api")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
-
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
     private final StreamRunner streamRunner;
