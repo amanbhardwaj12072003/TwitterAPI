@@ -3,3 +3,12 @@
 2024-09-10 17:05:37 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.491 seconds (process running for 0.821)
 2024-09-10 17:05:37 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
 2024-09-10 17:05:37 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.2 with PID 36025 (/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.503 seconds (process running for 0.864)
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-10 18:11:45 [main] INFO  c.m.a.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-10 18:11:45 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum Fusce Maecenas ultricies purus pulvinar massa elit Microservices Lorem libero consectetuer consectetuer congue massa amet
+2024-09-10 18:11:55 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor libero porttitor massa Kafka lectus pulvinar
+2024-09-10 18:12:05 [pool-1-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus sit congue sit sed Microservices amet Maecenas adipiscing
