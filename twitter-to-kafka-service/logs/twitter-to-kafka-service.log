@@ -290,3 +290,20 @@ Consider defining a bean of type 'com.microservices.api.kafka.producer.config.se
 2024-09-11 01:44:51 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
 2024-09-11 01:44:51 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
 2024-09-11 01:44:51 [SpringApplicationShutdownHook] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2024-09-11 16:51:59 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
