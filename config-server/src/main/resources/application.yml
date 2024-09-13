@@ -20,3 +20,7 @@ spring:
           password: ${GIT_PASSWORD}
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: ${SPRING_CLOUD_USER}
+      password: ${SPRING_CLOUD_PASSWORD}
