@@ -1,0 +1,1360 @@
+2024-09-14 12:49:17 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 12:49:17 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 12:49:17 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 12:49:17 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@6579c3d9]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@1136b469 testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5a18cd76, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6995bf68, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77d67cf3, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@66ac5762, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@71529963, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4ff4357f, org.springframework.boot.test.context.SpringBootTestAnnotation@2ca66ba], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 12:57:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 12:57:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 12:57:06 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 12:57:06 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@1136b469]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@17ae7628 testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3da30852, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5143c662, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6dee4f1b, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@797cf65c, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@61a88b8c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@49cb9cb5, org.springframework.boot.test.context.SpringBootTestAnnotation@2ca66ba], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 12:58:02 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 12:58:02 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 12:58:02 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 12:58:02 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@1136b469]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@17ae7628 testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3da30852, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5143c662, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6dee4f1b, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@797cf65c, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@61a88b8c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@49cb9cb5, org.springframework.boot.test.context.SpringBootTestAnnotation@2ca66ba], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 12:59:04 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 13:00:42 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.2 with PID 89548 (/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service)
+2024-09-14 13:00:42 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-14 13:00:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=160bb24f-9d70-337f-b06e-055952c02c6b
+2024-09-14 13:00:42 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 13:00:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 13:00:43 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/Users/amanbhardwaj/.m2/repository/com/microservices/api/kafka-producer/0.0.1-SNAPSHOT/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/api/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+2024-09-14 13:00:43 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-14 13:00:43 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/Users/amanbhardwaj/.m2/repository/com/microservices/api/kafka-producer/0.0.1-SNAPSHOT/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/api/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/Users/amanbhardwaj/.m2/repository/com/microservices/api/kafka-producer/0.0.1-SNAPSHOT/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/api/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/twitter-to-kafka-service/target/classes/com/microservices/api/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/Users/amanbhardwaj/.m2/repository/com/microservices/api/kafka-producer/0.0.1-SNAPSHOT/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/api/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/Users/amanbhardwaj/.m2/repository/com/microservices/api/kafka-producer/0.0.1-SNAPSHOT/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/api/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:380)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:351)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerFactory(<generated>)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig.kafkaTemplate(KafkaProducerConfig.java:51)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$kafkaTemplate$1(<generated>)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.kafkaTemplate(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 97 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/api/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:380)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:351)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerConfig(<generated>)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig.producerFactory(KafkaProducerConfig.java:46)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$producerFactory$0(<generated>)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerFactory(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 98 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 119 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.api.config.KafkaProducerConfigData.getBatchSize()" is null
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig.producerConfig(KafkaProducerConfig.java:34)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$producerConfig$2(<generated>)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.api.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerConfig(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 120 common frames omitted
+2024-09-14 13:04:21 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 13:04:21 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 13:04:21 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 13:04:21 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@66434cc8]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@2b87581 testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4c51cf28, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@71c27ee8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@421bba99, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@4fad9bb2, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@3f270e0a, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@45fd9a4d, org.springframework.boot.test.context.SpringBootTestAnnotation@2ca66ba], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 13:08:01 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 13:08:01 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 13:08:02 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 13:08:02 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@4690f583]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@72ed9aad testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@46dffdc3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@db57326, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@691939c9, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@5adb0db3, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@2e2ff723, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5629510, org.springframework.boot.test.context.SpringBootTestAnnotation@43f6829a], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 21:11:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 21:12:47 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 21:16:57 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 21:18:52 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-14 21:18:52 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2024-09-14 21:18:53 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 21:18:53 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@59712875]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@4690f583 testClass = com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@46dffdc3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@db57326, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@691939c9, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@5adb0db3, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@2e2ff723, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5629510, org.springframework.boot.test.context.SpringBootTestAnnotation@43f6829a], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
+	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 73 common frames omitted
+2024-09-14 21:20:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+No spring.config.import property has been defined
+
+Action:
+
+Add a spring.config.import=configserver: property to your configuration.
+	If configuration is not required add spring.config.import=optional:configserver: instead.
+	To disable this check, set spring.cloud.config.enabled=false or 
+	spring.cloud.config.import-check.enabled=false.
+
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:14 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-09-14 21:53:14 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-09-14 21:53:14 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-09-14 21:53:14 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-09-14 21:53:14 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-09-14 21:53:14 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2024-09-14 21:53:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=04d6db78ebf79c79eb9f7d69903b308b7c35a1e6, state=null
+2024-09-14 21:53:16 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml'}]
+2024-09-14 21:53:16 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - The following 1 profile is active: "twitter_to_kafka"
+2024-09-14 21:53:17 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a5ee32cc-21fa-377d-acd7-ce6e48ee2bb9
+2024-09-14 21:53:17 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-configClient [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-09-14 21:53:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-14 21:53:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-14 21:53:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-14 21:53:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-14 21:53:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-14 21:53:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 431 ms
+2024-09-14 21:53:17 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-09-14 21:53:17 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-09-14 21:53:17 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-09-14 21:53:17 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-14 21:53:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-14 21:53:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-14 21:53:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1726330997524
+2024-09-14 21:53:18 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1329e0c7-975f-40e4-a258-ee91a66353a6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-14 21:53:18 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-14 21:53:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-14 21:53:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudDefaultProperties refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationConfig: [classpath:/bootstrap.yml] refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-configClient refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationConfig: [classpath:/bootstrap.yml] refreshed
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 21:53:18 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.cloud.bootstrap.BootstrapApplicationListener$ExtendedDefaultPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 21:53:18 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.728 seconds (process running for 3.952)
+2024-09-14 21:53:18 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2024-09-14 21:53:18 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Dad is here
+2024-09-14 21:53:18 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Creating 1 topics, attempts 0
+2024-09-14 21:53:18 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2024-09-14 21:53:18 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempts 0
+2024-09-14 21:53:18 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2024-09-14 21:53:19 [main] INFO  c.m.a.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name [twitter-topic] are ready for operations
+2024-09-14 21:53:19 [main] INFO  c.m.a.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing massa congue amet Microservices consectetuer purus, sending to kafka topic twitter-topic
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1099808936537845475, "id": 8801203981346873077, "text": "adipiscing massa congue amet Microservices consectetuer purus", "createdAt": 1726330999000}' to topic='twitter-topic'
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = twitter-to-kafka-service-producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=twitter-to-kafka-service-producer-1] Instantiated an idempotent producer.
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - These configurations '[schema.registry.url]' were supplied but are not used yet.
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-14 21:53:19 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1726330999351
+2024-09-14 21:53:19 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=twitter-to-kafka-service-producer-1] Cluster ID: FNeKMxDwRAufwo1A5qJ2LQ
+2024-09-14 21:53:19 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=twitter-to-kafka-service-producer-1] ProducerId set to 1 with epoch 0
+2024-09-14 21:53:19 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 15; Timestamp 1726330999408, at time 175253964118083
+2024-09-14 21:53:29 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sed elit Lorem ultricies Kafka amet purus, sending to kafka topic twitter-topic
+2024-09-14 21:53:29 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4177467690231139640, "id": 3118873246964993955, "text": "sed elit Lorem ultricies Kafka amet purus", "createdAt": 1726331009000}' to topic='twitter-topic'
+2024-09-14 21:53:29 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 20; Timestamp 1726331009841, at time 175264021285625
+2024-09-14 21:53:39 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text posuere lectus Fusce Maecenas elit ipsum Microservices Lorem posuere posuere congue lectus, sending to kafka topic twitter-topic
+2024-09-14 21:53:39 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8009640336057323083, "id": 5865847811841386305, "text": "posuere lectus Fusce Maecenas elit ipsum Microservices Lorem posuere posuere congue lectus", "createdAt": 1726331019000}' to topic='twitter-topic'
+2024-09-14 21:53:39 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 16; Timestamp 1726331019853, at time 175273958563083
+2024-09-14 21:53:49 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue elit sit Fusce purus lectus Spring congue sit magna consectetuer, sending to kafka topic twitter-topic
+2024-09-14 21:53:49 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4714603218084500773, "id": 3985852239823750726, "text": "congue elit sit Fusce purus lectus Spring congue sit magna consectetuer", "createdAt": 1726331029000}' to topic='twitter-topic'
+2024-09-14 21:53:49 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 17; Timestamp 1726331029864, at time 175283993856916
+2024-09-14 21:53:59 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text dolor libero magna elit Lorem Kafka porttitor libero ipsum, sending to kafka topic twitter-topic
+2024-09-14 21:53:59 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 744804390196467677, "id": 6022999829583625774, "text": "dolor libero magna elit Lorem Kafka porttitor libero ipsum", "createdAt": 1726331039000}' to topic='twitter-topic'
+2024-09-14 21:53:59 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 21; Timestamp 1726331039876, at time 175294024059041
+2024-09-14 21:54:09 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ultricies congue ultricies consectetuer Elasticsearch Lorem posuere, sending to kafka topic twitter-topic
+2024-09-14 21:54:09 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6369130927151624823, "id": 1101604831724492579, "text": "ultricies congue ultricies consectetuer Elasticsearch Lorem posuere", "createdAt": 1726331049000}' to topic='twitter-topic'
+2024-09-14 21:54:09 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 22; Timestamp 1726331049889, at time 175304015413375
+2024-09-14 21:54:19 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero malesuada ultricies Spring magna dolor, sending to kafka topic twitter-topic
+2024-09-14 21:54:19 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 470857273370375310, "id": 1004782570010621104, "text": "libero malesuada ultricies Spring magna dolor", "createdAt": 1726331059000}' to topic='twitter-topic'
+2024-09-14 21:54:19 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 15; Timestamp 1726331059900, at time 175314077872791
+2024-09-14 21:54:29 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text pulvinar posuere sit Maecenas sed consectetuer ultricies congue Spring pulvinar sit porttitor consectetuer massa consectetuer libero, sending to kafka topic twitter-topic
+2024-09-14 21:54:29 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3843302248996509358, "id": 6155421135471343011, "text": "pulvinar posuere sit Maecenas sed consectetuer ultricies congue Spring pulvinar sit porttitor consectetuer massa consectetuer libero", "createdAt": 1726331069000}' to topic='twitter-topic'
+2024-09-14 21:54:29 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 23; Timestamp 1726331069915, at time 175324026648208
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=twitter-to-kafka-service-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for twitter-to-kafka-service-producer-1 unregistered
+2024-09-14 21:54:38 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2024-09-14 21:54:38 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-14 21:54:38 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-14 21:54:38 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-14 21:54:38 [SpringApplicationShutdownHook] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
