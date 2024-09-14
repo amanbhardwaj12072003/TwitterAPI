@@ -1,4 +1,6 @@
 spring:
+  config:
+    import:
   application:
     name: twitter-to-kafka-service
   profiles:
@@ -8,4 +10,9 @@ spring:
       name: twitter-to-kafka-service,config-client
       uri: http://localhost:8888
       username: ${SPRING_CLOUD_USER}
-      password: ${SPRING_CLOUD_PASSWORD}
+      password: ENC(+ygJoHcBmHjNxrOvTWyrubjvRiS8U6p1FFenLXqQ9vZNYWEriBT+SNGP6QymQtHI)
+
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_PASSWORD}

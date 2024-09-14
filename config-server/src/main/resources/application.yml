@@ -17,10 +17,16 @@ spring:
           uri: https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository
           default-label: main
           username: ${GIT_USERNAME}
-          password: ${GIT_PASSWORD}
+          password: ENC(kXaxGxlrM/TiiYg+6g6Td98ZCP0wfeRUB03Lnb4hwb6W6sTvqQjlGmJciFbA6NZ4AmIwh8OkgxEOuRSWjL20PEi15ETCej31jNimifW+Ha4=)
+#          password: ${GIT_PASSWORD}
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: ${SPRING_CLOUD_USER}
-      password: ${SPRING_CLOUD_PASSWORD}
+      password: ENC(+ygJoHcBmHjNxrOvTWyrubjvRiS8U6p1FFenLXqQ9vZNYWEriBT+SNGP6QymQtHI)
+#      password: ${SPRING_CLOUD_PASSWORD}
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_PASSWORD}
