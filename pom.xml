@@ -24,6 +24,8 @@
 		<module>config-server</module>
 		<module>kafka/kafka-consumer</module>
 		<module>kafka-to-elastic-service</module>
+		<module>elastic</module>
+		<module>elastic/elastic-config</module>
 		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
@@ -235,6 +237,13 @@
 				<artifactId>spring-cloud-starter-bootstrap</artifactId>
 				<version>${spring-cloud-starter-bootstrap.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
 
 
 
