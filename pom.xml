@@ -22,7 +22,8 @@
 		<module>kafka/kafka-producer</module>
 		<module>common-config</module>
 		<module>config-server</module>
-<!--		<module>playground</module>-->
+		<module>kafka/kafka-consumer</module>
+		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
 	<url/>
