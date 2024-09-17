@@ -1,645 +1,296 @@
-2024-09-14 12:02:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 12:12:12 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 12:56:07 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 21:21:05 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 21:32:45 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 21:33:01 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-2024-09-14 21:43:08 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:08 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2024-09-14 21:43:08 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2024-09-14 21:43:08 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2024-09-14 21:43:08 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2024-09-14 21:43:10 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=04d6db78ebf79c79eb9f7d69903b308b7c35a1e6, state=null
-2024-09-14 21:43:10 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml'}]
-2024-09-14 21:43:10 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - The following 1 profile is active: "twitter_to_kafka"
-2024-09-14 21:43:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a5ee32cc-21fa-377d-acd7-ce6e48ee2bb9
-2024-09-14 21:43:10 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-configClient [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2024-09-14 21:43:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-09-14 21:43:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-09-14 21:43:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-14 21:43:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-14 21:43:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-14 21:43:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 539 ms
-2024-09-14 21:43:11 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2024-09-14 21:43:11 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2024-09-14 21:43:11 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2024-09-14 21:43:11 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = 
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2024-09-14 21:43:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
-2024-09-14 21:43:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
-2024-09-14 21:43:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1726330391244
-2024-09-14 21:43:11 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 410f3b74-bdd1-40ba-9f1e-19cd6f446607
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2024-09-14 21:43:11 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-09-14 21:43:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-09-14 21:43:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudDefaultProperties refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationConfig: [classpath:/bootstrap.yml] refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-configClient refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source bootstrapProperties-https://github.com/amanbhardwaj12072003/spring-cloud-config-server-repository/config-client.yml refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationConfig: [classpath:/bootstrap.yml] refreshed
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2024-09-14 21:43:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.cloud.bootstrap.BootstrapApplicationListener$ExtendedDefaultPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2024-09-14 21:43:11 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 5.12 seconds (process running for 5.52)
-2024-09-14 21:43:11 [main] INFO  c.m.a.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2024-09-14 21:43:11 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Dad is here
-2024-09-14 21:43:11 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Creating 1 topics, attempts 0
-2024-09-14 21:43:11 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
-2024-09-14 21:43:11 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempts 0
-2024-09-14 21:43:13 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2024-09-14 21:43:16 [main] INFO  c.m.a.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name [twitter-topic] are ready for operations
-2024-09-14 21:43:16 [main] INFO  c.m.a.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text dolor malesuada porttitor elit Maecenas sit elit Elasticsearch posuere ultricies malesuada Lorem sit, sending to kafka topic twitter-topic
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 9212186906635974056, "id": 2783058665366621483, "text": "dolor malesuada porttitor elit Maecenas sit elit Elasticsearch posuere ultricies malesuada Lorem sit", "createdAt": 1726330396000}' to topic='twitter-topic'
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 1638400
-	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = twitter-to-kafka-service-producer-1
-	compression.type = snappy
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	enable.metrics.push = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
-	linger.ms = 5
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 60000
-	retries = 5
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
-
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
-	auto.register.schemas = true
-	avro.reflection.allow.null = false
-	avro.remove.java.properties = false
-	avro.use.logical.type.converters = false
-	basic.auth.credentials.source = URL
-	basic.auth.user.info = [hidden]
-	bearer.auth.cache.expiry.buffer.seconds = 300
-	bearer.auth.client.id = null
-	bearer.auth.client.secret = null
-	bearer.auth.credentials.source = STATIC_TOKEN
-	bearer.auth.custom.provider.class = null
-	bearer.auth.identity.pool.id = null
-	bearer.auth.issuer.endpoint.url = null
-	bearer.auth.logical.cluster = null
-	bearer.auth.scope = null
-	bearer.auth.scope.claim.name = scope
-	bearer.auth.sub.claim.name = sub
-	bearer.auth.token = [hidden]
-	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
-	http.connect.timeout.ms = 60000
-	http.read.timeout.ms = 60000
-	id.compatibility.strict = true
-	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
-	latest.cache.size = 1000
-	latest.cache.ttl.sec = -1
-	latest.compatibility.strict = true
-	max.schemas.per.subject = 1000
-	normalize.schemas = false
-	proxy.host = 
-	proxy.port = -1
-	rule.actions = []
-	rule.executors = []
-	rule.service.loader.enable = true
-	schema.format = null
-	schema.reflection = false
-	schema.registry.basic.auth.user.info = [hidden]
-	schema.registry.ssl.cipher.suites = null
-	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	schema.registry.ssl.endpoint.identification.algorithm = https
-	schema.registry.ssl.engine.factory.class = null
-	schema.registry.ssl.key.password = null
-	schema.registry.ssl.keymanager.algorithm = SunX509
-	schema.registry.ssl.keystore.certificate.chain = null
-	schema.registry.ssl.keystore.key = null
-	schema.registry.ssl.keystore.location = null
-	schema.registry.ssl.keystore.password = null
-	schema.registry.ssl.keystore.type = JKS
-	schema.registry.ssl.protocol = TLSv1.3
-	schema.registry.ssl.provider = null
-	schema.registry.ssl.secure.random.implementation = null
-	schema.registry.ssl.trustmanager.algorithm = PKIX
-	schema.registry.ssl.truststore.certificates = null
-	schema.registry.ssl.truststore.location = null
-	schema.registry.ssl.truststore.password = null
-	schema.registry.ssl.truststore.type = JKS
-	schema.registry.url = [http://localhost:8081]
-	use.latest.version = false
-	use.latest.with.metadata = null
-	use.schema.id = -1
-	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
-
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=twitter-to-kafka-service-producer-1] Instantiated an idempotent producer.
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - These configurations '[schema.registry.url]' were supplied but are not used yet.
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
-2024-09-14 21:43:16 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1726330396567
-2024-09-14 21:43:16 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=twitter-to-kafka-service-producer-1] Cluster ID: FNeKMxDwRAufwo1A5qJ2LQ
-2024-09-14 21:43:17 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=twitter-to-kafka-service-producer-1] ProducerId set to 0 with epoch 0
-2024-09-14 21:43:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 0; Timestamp 1726330396602, at time 174652270933541
-2024-09-14 21:43:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sit posuere massa malesuada posuere malesuada Elasticsearch posuere libero ultricies sit, sending to kafka topic twitter-topic
-2024-09-14 21:43:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 435158040766551868, "id": 8101778564947893819, "text": "sit posuere massa malesuada posuere malesuada Elasticsearch posuere libero ultricies sit", "createdAt": 1726330408000}' to topic='twitter-topic'
-2024-09-14 21:43:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1; Timestamp 1726330408029, at time 174662156048750
-2024-09-14 21:43:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero libero purus ultricies Spring porttitor Fusce, sending to kafka topic twitter-topic
-2024-09-14 21:43:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2647043543269042910, "id": 604572680710942665, "text": "libero libero purus ultricies Spring porttitor Fusce", "createdAt": 1726330418000}' to topic='twitter-topic'
-2024-09-14 21:43:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 0; Timestamp 1726330418046, at time 174672224386875
-2024-09-14 21:43:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text amet ipsum purus magna magna Java posuere porttitor massa, sending to kafka topic twitter-topic
-2024-09-14 21:43:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6625398940646344630, "id": 4073619783564046884, "text": "amet ipsum purus magna magna Java posuere porttitor massa", "createdAt": 1726330428000}' to topic='twitter-topic'
-2024-09-14 21:43:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 0; Timestamp 1726330428055, at time 174682306518333
-2024-09-14 21:43:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sit ipsum posuere amet malesuada sed Kafka libero malesuada elit massa, sending to kafka topic twitter-topic
-2024-09-14 21:43:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6931563509710119962, "id": 5932382801215023062, "text": "sit ipsum posuere amet malesuada sed Kafka libero malesuada elit massa", "createdAt": 1726330438000}' to topic='twitter-topic'
-2024-09-14 21:43:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1; Timestamp 1726330438072, at time 174692203637500
-2024-09-14 21:44:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text posuere purus sit Kafka malesuada massa, sending to kafka topic twitter-topic
-2024-09-14 21:44:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8162577305396603667, "id": 7522222383539405302, "text": "posuere purus sit Kafka malesuada massa", "createdAt": 1726330448000}' to topic='twitter-topic'
-2024-09-14 21:44:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1; Timestamp 1726330448083, at time 174702202654958
-2024-09-14 21:44:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sed posuere sed purus posuere porttitor Elasticsearch elit purus elit massa, sending to kafka topic twitter-topic
-2024-09-14 21:44:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1593793259759315146, "id": 8554466752165479478, "text": "sed posuere sed purus posuere porttitor Elasticsearch elit purus elit massa", "createdAt": 1726330458000}' to topic='twitter-topic'
-2024-09-14 21:44:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 2; Timestamp 1726330458079, at time 174712165030750
-2024-09-14 21:44:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ipsum Fusce porttitor massa congue Elasticsearch dolor sit magna sit, sending to kafka topic twitter-topic
-2024-09-14 21:44:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6439682904108313463, "id": 693262144183355235, "text": "ipsum Fusce porttitor massa congue Elasticsearch dolor sit magna sit", "createdAt": 1726330468000}' to topic='twitter-topic'
-2024-09-14 21:44:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 2; Timestamp 1726330468084, at time 174722238522500
-2024-09-14 21:44:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue magna libero purus posuere malesuada Maecenas amet Kafka posuere adipiscing adipiscing pulvinar dolor libero, sending to kafka topic twitter-topic
-2024-09-14 21:44:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8788598715507986652, "id": 8680131776265029860, "text": "congue magna libero purus posuere malesuada Maecenas amet Kafka posuere adipiscing adipiscing pulvinar dolor libero", "createdAt": 1726330478000}' to topic='twitter-topic'
-2024-09-14 21:44:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 3; Timestamp 1726330478113, at time 174733028198750
-2024-09-14 21:44:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Maecenas adipiscing consectetuer libero sit Fusce dolor Kafka consectetuer ultricies Fusce elit lectus sed, sending to kafka topic twitter-topic
-2024-09-14 21:44:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5865356996742843175, "id": 7095799073098251334, "text": "Maecenas adipiscing consectetuer libero sit Fusce dolor Kafka consectetuer ultricies Fusce elit lectus sed", "createdAt": 1726330488000}' to topic='twitter-topic'
-2024-09-14 21:44:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 3; Timestamp 1726330488196, at time 174742353165916
-2024-09-14 21:44:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sit pulvinar purus ipsum Elasticsearch ipsum porttitor Lorem, sending to kafka topic twitter-topic
-2024-09-14 21:44:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8849196224593915364, "id": 9160033610091328318, "text": "sit pulvinar purus ipsum Elasticsearch ipsum porttitor Lorem", "createdAt": 1726330498000}' to topic='twitter-topic'
-2024-09-14 21:44:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 4; Timestamp 1726330498212, at time 174752368746708
-2024-09-14 21:45:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetuer ipsum Lorem lectus Lorem Spring elit elit sed Lorem, sending to kafka topic twitter-topic
-2024-09-14 21:45:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6541249243171031955, "id": 4896119100484199221, "text": "consectetuer ipsum Lorem lectus Lorem Spring elit elit sed Lorem", "createdAt": 1726330508000}' to topic='twitter-topic'
-2024-09-14 21:45:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 2; Timestamp 1726330508227, at time 174762423544875
-2024-09-14 21:45:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text lectus consectetuer adipiscing ultricies ultricies Elasticsearch pulvinar ultricies consectetuer magna, sending to kafka topic twitter-topic
-2024-09-14 21:45:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6422667100049159836, "id": 7035602217226128578, "text": "lectus consectetuer adipiscing ultricies ultricies Elasticsearch pulvinar ultricies consectetuer magna", "createdAt": 1726330518000}' to topic='twitter-topic'
-2024-09-14 21:45:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 4; Timestamp 1726330518237, at time 174772369172833
-2024-09-14 21:45:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Maecenas Fusce Fusce dolor adipiscing magna adipiscing Spring purus libero lectus adipiscing Fusce, sending to kafka topic twitter-topic
-2024-09-14 21:45:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1005653710125563014, "id": 7436214756989972982, "text": "Maecenas Fusce Fusce dolor adipiscing magna adipiscing Spring purus libero lectus adipiscing Fusce", "createdAt": 1726330528000}' to topic='twitter-topic'
-2024-09-14 21:45:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 5; Timestamp 1726330528252, at time 174782415768333
-2024-09-14 21:45:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text pulvinar ultricies consectetuer purus massa purus Java malesuada adipiscing malesuada consectetuer posuere, sending to kafka topic twitter-topic
-2024-09-14 21:45:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 865245095305961667, "id": 5390055623357943820, "text": "pulvinar ultricies consectetuer purus massa purus Java malesuada adipiscing malesuada consectetuer posuere", "createdAt": 1726330538000}' to topic='twitter-topic'
-2024-09-14 21:45:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 6; Timestamp 1726330538267, at time 174792407916833
-2024-09-14 21:45:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Fusce amet Lorem Elasticsearch amet ultricies, sending to kafka topic twitter-topic
-2024-09-14 21:45:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1516633858498146708, "id": 6592250335111341508, "text": "Fusce amet Lorem Elasticsearch amet ultricies", "createdAt": 1726330548000}' to topic='twitter-topic'
-2024-09-14 21:45:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 7; Timestamp 1726330548275, at time 174802387972875
-2024-09-14 21:45:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue porttitor purus posuere porttitor Kafka pulvinar adipiscing dolor ultricies, sending to kafka topic twitter-topic
-2024-09-14 21:45:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8514366784252920948, "id": 6312850887664201650, "text": "congue porttitor purus posuere porttitor Kafka pulvinar adipiscing dolor ultricies", "createdAt": 1726330558000}' to topic='twitter-topic'
-2024-09-14 21:45:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 8; Timestamp 1726330558288, at time 174812596885500
-2024-09-14 21:46:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text porttitor lectus dolor malesuada adipiscing Microservices sed sit adipiscing, sending to kafka topic twitter-topic
-2024-09-14 21:46:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5523989577712573500, "id": 7300704205059642917, "text": "porttitor lectus dolor malesuada adipiscing Microservices sed sit adipiscing", "createdAt": 1726330568000}' to topic='twitter-topic'
-2024-09-14 21:46:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 9; Timestamp 1726330568306, at time 174822458454333
-2024-09-14 21:46:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Lorem magna dolor adipiscing ultricies sed Fusce pulvinar Kafka congue dolor massa libero sed ipsum purus, sending to kafka topic twitter-topic
-2024-09-14 21:46:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2268857221462000707, "id": 1048982777965689557, "text": "Lorem magna dolor adipiscing ultricies sed Fusce pulvinar Kafka congue dolor massa libero sed ipsum purus", "createdAt": 1726330578000}' to topic='twitter-topic'
-2024-09-14 21:46:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 3; Timestamp 1726330578322, at time 174832491347125
-2024-09-14 21:46:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sed sed elit massa sed adipiscing posuere Java purus dolor porttitor pulvinar ipsum sit, sending to kafka topic twitter-topic
-2024-09-14 21:46:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3369165746473488439, "id": 2528234696083735590, "text": "sed sed elit massa sed adipiscing posuere Java purus dolor porttitor pulvinar ipsum sit", "createdAt": 1726330588000}' to topic='twitter-topic'
-2024-09-14 21:46:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 4; Timestamp 1726330588345, at time 174842500947416
-2024-09-14 21:46:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text purus elit sit posuere adipiscing Spring pulvinar libero posuere ultricies, sending to kafka topic twitter-topic
-2024-09-14 21:46:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6655751842499476846, "id": 5029629588534085508, "text": "purus elit sit posuere adipiscing Spring pulvinar libero posuere ultricies", "createdAt": 1726330598000}' to topic='twitter-topic'
-2024-09-14 21:46:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 5; Timestamp 1726330598361, at time 174852508784250
-2024-09-14 21:46:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Fusce lectus purus pulvinar sed Elasticsearch ultricies sed Maecenas, sending to kafka topic twitter-topic
-2024-09-14 21:46:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1010989287484841365, "id": 7061944132917911635, "text": "Fusce lectus purus pulvinar sed Elasticsearch ultricies sed Maecenas", "createdAt": 1726330608000}' to topic='twitter-topic'
-2024-09-14 21:46:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 5; Timestamp 1726330608377, at time 174862502988083
-2024-09-14 21:46:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text porttitor lectus magna Lorem magna libero Elasticsearch sed Lorem sed posuere massa, sending to kafka topic twitter-topic
-2024-09-14 21:46:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3992455938321596059, "id": 274039784102341946, "text": "porttitor lectus magna Lorem magna libero Elasticsearch sed Lorem sed posuere massa", "createdAt": 1726330618000}' to topic='twitter-topic'
-2024-09-14 21:46:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 6; Timestamp 1726330618393, at time 174872531692458
-2024-09-14 21:47:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Maecenas sed adipiscing magna Java lectus congue, sending to kafka topic twitter-topic
-2024-09-14 21:47:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8807610454032452285, "id": 6985861265262091798, "text": "Maecenas sed adipiscing magna Java lectus congue", "createdAt": 1726330628000}' to topic='twitter-topic'
-2024-09-14 21:47:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 10; Timestamp 1726330628401, at time 174882526072625
-2024-09-14 21:47:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ipsum lectus magna libero malesuada Elasticsearch consectetuer libero porttitor consectetuer, sending to kafka topic twitter-topic
-2024-09-14 21:47:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 675164541077487723, "id": 5087646876044939625, "text": "ipsum lectus magna libero malesuada Elasticsearch consectetuer libero porttitor consectetuer", "createdAt": 1726330638000}' to topic='twitter-topic'
-2024-09-14 21:47:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 7; Timestamp 1726330638412, at time 174892543724625
-2024-09-14 21:47:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero Fusce consectetuer adipiscing malesuada massa purus Microservices libero malesuada lectus sed adipiscing, sending to kafka topic twitter-topic
-2024-09-14 21:47:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2811507569056796843, "id": 4679304399532160813, "text": "libero Fusce consectetuer adipiscing malesuada massa purus Microservices libero malesuada lectus sed adipiscing", "createdAt": 1726330648000}' to topic='twitter-topic'
-2024-09-14 21:47:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 6; Timestamp 1726330648427, at time 174902580924625
-2024-09-14 21:47:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text pulvinar ipsum congue Spring purus pulvinar, sending to kafka topic twitter-topic
-2024-09-14 21:47:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6894286562997498767, "id": 3525448018565335250, "text": "pulvinar ipsum congue Spring purus pulvinar", "createdAt": 1726330658000}' to topic='twitter-topic'
-2024-09-14 21:47:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 8; Timestamp 1726330658444, at time 174912609352708
-2024-09-14 21:47:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Lorem porttitor Maecenas Spring libero adipiscing, sending to kafka topic twitter-topic
-2024-09-14 21:47:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6131924933886236365, "id": 1189569773083048999, "text": "Lorem porttitor Maecenas Spring libero adipiscing", "createdAt": 1726330668000}' to topic='twitter-topic'
-2024-09-14 21:47:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 7; Timestamp 1726330668456, at time 174922572477833
-2024-09-14 21:47:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text elit Fusce posuere pulvinar Fusce congue Java sed malesuada pulvinar pulvinar consectetuer, sending to kafka topic twitter-topic
-2024-09-14 21:47:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1168308046668107079, "id": 5455944354848562186, "text": "elit Fusce posuere pulvinar Fusce congue Java sed malesuada pulvinar pulvinar consectetuer", "createdAt": 1726330678000}' to topic='twitter-topic'
-2024-09-14 21:47:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 9; Timestamp 1726330678464, at time 174932595749875
-2024-09-14 21:48:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero sed malesuada sit Elasticsearch pulvinar pulvinar, sending to kafka topic twitter-topic
-2024-09-14 21:48:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3095092293509675818, "id": 6156930901173776952, "text": "libero sed malesuada sit Elasticsearch pulvinar pulvinar", "createdAt": 1726330688000}' to topic='twitter-topic'
-2024-09-14 21:48:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 8; Timestamp 1726330688477, at time 174942608174375
-2024-09-14 21:48:11 [kafka-admin-client-thread | adminclient-1] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
-2024-09-14 21:48:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ultricies sed sit ultricies consectetuer malesuada malesuada Maecenas Java sed purus malesuada magna sit porttitor Fusce, sending to kafka topic twitter-topic
-2024-09-14 21:48:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8460126905585922185, "id": 7071062499333935845, "text": "ultricies sed sit ultricies consectetuer malesuada malesuada Maecenas Java sed purus malesuada magna sit porttitor Fusce", "createdAt": 1726330698000}' to topic='twitter-topic'
-2024-09-14 21:48:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 9; Timestamp 1726330698485, at time 174952631038166
-2024-09-14 21:48:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text pulvinar lectus Lorem libero ipsum Kafka ipsum adipiscing sit lectus, sending to kafka topic twitter-topic
-2024-09-14 21:48:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8444165236745209562, "id": 7911492434995983505, "text": "pulvinar lectus Lorem libero ipsum Kafka ipsum adipiscing sit lectus", "createdAt": 1726330708000}' to topic='twitter-topic'
-2024-09-14 21:48:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 10; Timestamp 1726330708496, at time 174962632306458
-2024-09-14 21:48:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text elit magna Maecenas amet elit Lorem Spring sit Lorem pulvinar posuere, sending to kafka topic twitter-topic
-2024-09-14 21:48:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3208700523403251179, "id": 3488508227113166110, "text": "elit magna Maecenas amet elit Lorem Spring sit Lorem pulvinar posuere", "createdAt": 1726330718000}' to topic='twitter-topic'
-2024-09-14 21:48:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 11; Timestamp 1726330718506, at time 174972631598875
-2024-09-14 21:48:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text elit amet malesuada magna amet lectus Microservices Maecenas ultricies magna ipsum, sending to kafka topic twitter-topic
-2024-09-14 21:48:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5722122206316292272, "id": 5100534275791915819, "text": "elit amet malesuada magna amet lectus Microservices Maecenas ultricies magna ipsum", "createdAt": 1726330728000}' to topic='twitter-topic'
-2024-09-14 21:48:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 12; Timestamp 1726330728517, at time 174982632821083
-2024-09-14 21:48:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text pulvinar consectetuer purus dolor libero sit Java posuere sit adipiscing Fusce posuere, sending to kafka topic twitter-topic
-2024-09-14 21:48:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7382708637858496479, "id": 9186948113620513900, "text": "pulvinar consectetuer purus dolor libero sit Java posuere sit adipiscing Fusce posuere", "createdAt": 1726330738000}' to topic='twitter-topic'
-2024-09-14 21:48:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 11; Timestamp 1726330738535, at time 174992671790291
-2024-09-14 21:49:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text dolor massa elit Lorem sed porttitor congue adipiscing Java purus dolor posuere ipsum lectus massa ipsum, sending to kafka topic twitter-topic
-2024-09-14 21:49:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2547535857399985008, "id": 795620614546975917, "text": "dolor massa elit Lorem sed porttitor congue adipiscing Java purus dolor posuere ipsum lectus massa ipsum", "createdAt": 1726330748000}' to topic='twitter-topic'
-2024-09-14 21:49:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 13; Timestamp 1726330748543, at time 175002667033125
-2024-09-14 21:49:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text massa dolor magna posuere ipsum libero Kafka Fusce lectus purus libero, sending to kafka topic twitter-topic
-2024-09-14 21:49:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1482299319102902680, "id": 6193381721079325193, "text": "massa dolor magna posuere ipsum libero Kafka Fusce lectus purus libero", "createdAt": 1726330758000}' to topic='twitter-topic'
-2024-09-14 21:49:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 10; Timestamp 1726330758556, at time 175012691866166
-2024-09-14 21:49:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text malesuada purus congue posuere Java posuere lectus porttitor, sending to kafka topic twitter-topic
-2024-09-14 21:49:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3455905413071198470, "id": 1778466556312780029, "text": "malesuada purus congue posuere Java posuere lectus porttitor", "createdAt": 1726330768000}' to topic='twitter-topic'
-2024-09-14 21:49:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 11; Timestamp 1726330768572, at time 175022734281583
-2024-09-14 21:49:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue malesuada massa Fusce Spring adipiscing posuere porttitor, sending to kafka topic twitter-topic
-2024-09-14 21:49:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1838748259039551465, "id": 1047015149115216679, "text": "congue malesuada massa Fusce Spring adipiscing posuere porttitor", "createdAt": 1726330778000}' to topic='twitter-topic'
-2024-09-14 21:49:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 12; Timestamp 1726330778588, at time 175032727025208
-2024-09-14 21:49:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text congue elit elit posuere Maecenas Spring adipiscing dolor elit malesuada, sending to kafka topic twitter-topic
-2024-09-14 21:49:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5194547797121880368, "id": 5266043470397225906, "text": "congue elit elit posuere Maecenas Spring adipiscing dolor elit malesuada", "createdAt": 1726330788000}' to topic='twitter-topic'
-2024-09-14 21:49:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 13; Timestamp 1726330788608, at time 175042761527916
-2024-09-14 21:49:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text purus Lorem magna lectus adipiscing Lorem elit sed Kafka sed purus dolor magna pulvinar libero libero, sending to kafka topic twitter-topic
-2024-09-14 21:49:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5060653399115257561, "id": 8797220806206009326, "text": "purus Lorem magna lectus adipiscing Lorem elit sed Kafka sed purus dolor magna pulvinar libero libero", "createdAt": 1726330798000}' to topic='twitter-topic'
-2024-09-14 21:49:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 14; Timestamp 1726330798625, at time 175052773602083
-2024-09-14 21:50:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text dolor sed Maecenas Microservices amet posuere, sending to kafka topic twitter-topic
-2024-09-14 21:50:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1140476557945975123, "id": 1734900454580178229, "text": "dolor sed Maecenas Microservices amet posuere", "createdAt": 1726330808000}' to topic='twitter-topic'
-2024-09-14 21:50:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 15; Timestamp 1726330808634, at time 175062751631750
-2024-09-14 21:50:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text malesuada magna ipsum Maecenas congue Spring congue Fusce sit, sending to kafka topic twitter-topic
-2024-09-14 21:50:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2407377619530667152, "id": 1707364409520204295, "text": "malesuada magna ipsum Maecenas congue Spring congue Fusce sit", "createdAt": 1726330818000}' to topic='twitter-topic'
-2024-09-14 21:50:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 16; Timestamp 1726330818648, at time 175072774066625
-2024-09-14 21:50:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text lectus malesuada porttitor ipsum Elasticsearch pulvinar libero sed, sending to kafka topic twitter-topic
-2024-09-14 21:50:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4671973877568359514, "id": 8810535671347841465, "text": "lectus malesuada porttitor ipsum Elasticsearch pulvinar libero sed", "createdAt": 1726330828000}' to topic='twitter-topic'
-2024-09-14 21:50:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 17; Timestamp 1726330828665, at time 175082806144333
-2024-09-14 21:50:38 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text libero elit adipiscing porttitor ultricies amet consectetuer sit Microservices congue adipiscing adipiscing pulvinar purus libero malesuada, sending to kafka topic twitter-topic
-2024-09-14 21:50:38 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 70429284194155431, "id": 8494173521727866617, "text": "libero elit adipiscing porttitor ultricies amet consectetuer sit Microservices congue adipiscing adipiscing pulvinar purus libero malesuada", "createdAt": 1726330838000}' to topic='twitter-topic'
-2024-09-14 21:50:38 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 12; Timestamp 1726330838676, at time 175092810127166
-2024-09-14 21:50:48 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetuer Lorem amet congue amet congue massa Java purus porttitor malesuada libero massa, sending to kafka topic twitter-topic
-2024-09-14 21:50:48 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7234016563726713621, "id": 5040036813335298501, "text": "consectetuer Lorem amet congue amet congue massa Java purus porttitor malesuada libero massa", "createdAt": 1726330848000}' to topic='twitter-topic'
-2024-09-14 21:50:48 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 18; Timestamp 1726330848684, at time 175102803426625
-2024-09-14 21:50:58 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sed Fusce amet sed Microservices adipiscing Maecenas, sending to kafka topic twitter-topic
-2024-09-14 21:50:58 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7977114982943535454, "id": 4613185041219785486, "text": "sed Fusce amet sed Microservices adipiscing Maecenas", "createdAt": 1726330858000}' to topic='twitter-topic'
-2024-09-14 21:50:58 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 13; Timestamp 1726330858690, at time 175112807771333
-2024-09-14 21:51:08 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Lorem posuere ipsum amet elit adipiscing congue sed Elasticsearch sit dolor amet Fusce massa ultricies, sending to kafka topic twitter-topic
-2024-09-14 21:51:08 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2841180374398518187, "id": 96735968695168764, "text": "Lorem posuere ipsum amet elit adipiscing congue sed Elasticsearch sit dolor amet Fusce massa ultricies", "createdAt": 1726330868000}' to topic='twitter-topic'
-2024-09-14 21:51:08 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 14; Timestamp 1726330868703, at time 175122837396583
-2024-09-14 21:51:18 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Fusce sit posuere amet Fusce Fusce libero Microservices amet massa pulvinar massa adipiscing, sending to kafka topic twitter-topic
-2024-09-14 21:51:18 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7499009086440707665, "id": 2926965080602694391, "text": "Fusce sit posuere amet Fusce Fusce libero Microservices amet massa pulvinar massa adipiscing", "createdAt": 1726330878000}' to topic='twitter-topic'
-2024-09-14 21:51:18 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 14; Timestamp 1726330878721, at time 175132921417458
-2024-09-14 21:51:28 [pool-3-thread-1] INFO  c.m.a.t.t.k.s.l.TwitterKafkaStatusListener - Received status text lectus dolor lectus posuere Maecenas elit pulvinar Spring Fusce dolor massa sit sit, sending to kafka topic twitter-topic
-2024-09-14 21:51:28 [pool-3-thread-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 147045083938996380, "id": 7712880497059218853, "text": "lectus dolor lectus posuere Maecenas elit pulvinar Spring Fusce dolor massa sit sit", "createdAt": 1726330888000}' to topic='twitter-topic'
-2024-09-14 21:51:28 [kafka-producer-network-thread | twitter-to-kafka-service-producer-1] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 19; Timestamp 1726330888732, at time 175142869538625
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=twitter-to-kafka-service-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for twitter-to-kafka-service-producer-1 unregistered
-2024-09-14 21:51:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
-2024-09-14 21:51:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2024-09-14 21:51:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2024-09-14 21:51:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2024-09-14 21:51:30 [SpringApplicationShutdownHook] INFO  c.m.a.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2024-09-14 21:52:51 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2024-09-14 21:52:51 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2024-09-14 21:52:51 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2024-09-14 21:52:51 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
-2024-09-14 21:52:51 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
-2024-09-14 21:52:51 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration': Unsatisfied dependency expressed through field 'propertySourceLocators': Error creating bean with name 'configServicePropertySource' defined in class path resource [org/springframework/cloud/config/client/ConfigServiceBootstrapConfiguration.class]: Unsatisfied dependency expressed through method 'configServicePropertySource' parameter 0: Error creating bean with name 'configClientProperties': Could not bind properties to 'ConfigClientProperties' : prefix=spring.cloud.config, ignoreInvalidFields=false, ignoreUnknownFields=true
-2024-09-14 21:52:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-14 21:52:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'spring.cloud.config.password' to java.lang.String:
-
-    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.cloud.config.password' to java.lang.String
-
-Action:
-
-Update your application's configuration
-
-2024-09-14 21:52:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'spring.cloud.config.password' to java.lang.String:
-
-    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.cloud.config.password' to java.lang.String
-
-Action:
-
-Update your application's configuration
-
+2024-09-16 11:10:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-16 11:10:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Connection refused. Will be trying the next url if available
+2024-09-16 11:10:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-16 11:10:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/twitter_to_kafka": Connection refused. Will be trying the next url if available
+2024-09-16 11:10:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:210)
+	at org.springframework.cloud.config.client.ConfigClientRetryBootstrapper.lambda$initialize$1(ConfigClientRetryBootstrapper.java:54)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:95)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:62)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:121)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:245)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:232)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:195)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:114)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:77)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.getRemoteEnvironment(ConfigServerConfigDataLoader.java:339)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:122)
+	... 46 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1304)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1237)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1123)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1052)
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:79)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 50 common frames omitted
+2024-09-16 11:10:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:210)
+	at org.springframework.cloud.config.client.ConfigClientRetryBootstrapper.lambda$initialize$1(ConfigClientRetryBootstrapper.java:54)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:95)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:62)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:121)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:245)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:232)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:195)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:114)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:77)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.getRemoteEnvironment(ConfigServerConfigDataLoader.java:339)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:122)
+	... 46 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1304)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1237)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1123)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1052)
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:79)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 50 common frames omitted
+2024-09-16 19:58:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-16 19:58:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Server redirected too many times (20). Will be trying the next url if available
+2024-09-16 19:58:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-16 19:58:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/twitter_to_kafka": Server redirected too many times (20). Will be trying the next url if available
+2024-09-16 19:58:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:210)
+	at org.springframework.cloud.config.client.ConfigClientRetryBootstrapper.lambda$initialize$1(ConfigClientRetryBootstrapper.java:54)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:95)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:62)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:121)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:245)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:232)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:195)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:114)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:77)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Server redirected too many times (20)
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.getRemoteEnvironment(ConfigServerConfigDataLoader.java:339)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:122)
+	... 46 common frames omitted
+Caused by: java.net.ProtocolException: Server redirected too many times (20)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2006)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 50 common frames omitted
+2024-09-16 19:58:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:210)
+	at org.springframework.cloud.config.client.ConfigClientRetryBootstrapper.lambda$initialize$1(ConfigClientRetryBootstrapper.java:54)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:95)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:62)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:121)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:245)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:232)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:195)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:114)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:77)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/twitter-to-kafka-service,config-client/default": Server redirected too many times (20)
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.getRemoteEnvironment(ConfigServerConfigDataLoader.java:339)
+	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:122)
+	... 46 common frames omitted
+Caused by: java.net.ProtocolException: Server redirected too many times (20)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2006)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 50 common frames omitted
