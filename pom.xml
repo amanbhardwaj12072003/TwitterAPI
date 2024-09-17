@@ -58,6 +58,7 @@
 		<jasypt-spring-boot-starter.version>3.0.5</jasypt-spring-boot-starter.version>
 		<spring-boot-starter-web.version>3.3.3</spring-boot-starter-web.version>
 		<spring-cloud-starter-bootstrap.version>4.1.4</spring-cloud-starter-bootstrap.version>
+		<elasticsearch.version>7.17.24</elasticsearch.version>
 
 	</properties>
 
@@ -244,6 +245,17 @@
 				<version>${spring-boot.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.elasticsearch</groupId>
+				<artifactId>elasticsearch</artifactId>
+				<version>${elasticsearch.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.elasticsearch.client</groupId>
+				<artifactId>elasticsearch-rest-high-level-client</artifactId>
+				<version>${elasticsearch.version}</version>
+			</dependency>
 
 
 
