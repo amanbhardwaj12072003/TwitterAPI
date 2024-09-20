@@ -5,22 +5,33 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.microservices.api</groupId>
-        <artifactId>microservices-api</artifactId>
+        <artifactId>elastic</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>elastic</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>elastic-model</module>
-        <module>elastic-index-client</module>
-        <module>elastic-query-client</module>
-    </modules>
+    <artifactId>elastic-query-client</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.api</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microservices.api</groupId>
+            <artifactId>elastic-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microservices.api</groupId>
+            <artifactId>elastic-model</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
