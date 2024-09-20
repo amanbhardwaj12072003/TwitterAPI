@@ -12,7 +12,6 @@ spring:
       username: spring_cloud_user
       password: 'Aman0081'
 
-
 log:
   app-name: kafka-to-elastic-service
 
