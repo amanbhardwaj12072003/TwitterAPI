@@ -32,6 +32,11 @@
             <groupId>com.microservices.api</groupId>
             <artifactId>elastic-model</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.microservices.api</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
