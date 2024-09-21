@@ -130,13 +130,13 @@
 
 			<dependency>
 				<groupId>com.microservices.api</groupId>
-				<artifactId>common-util</artifactId>
+				<artifactId>elastic-query-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>com.microservices.api</groupId>
-				<artifactId>elastic-query-client</artifactId>
+				<artifactId>common-util</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 

@@ -1,0 +1,165 @@
+2024-09-14 12:03:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-14 12:03:54 [main] INFO  c.m.api.config.server.ConfigServer - Starting ConfigServer using Java 21.0.2 with PID 73033 (/Users/amanbhardwaj/Desktop/microservices-api/config-server/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-14 12:03:54 [main] INFO  c.m.api.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-09-14 12:03:55 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=225f4542-5564-35b3-a969-ba4fb822fdb7
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:03:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-09-14 12:03:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-09-14 12:03:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-14 12:03:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-14 12:03:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-14 12:03:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 679 ms
+2024-09-14 12:03:55 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-09-14 12:03:55 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-09-14 12:03:55 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-09-14 12:03:55 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-09-14 12:03:55 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-09-14 12:03:55 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityFilterChainRegistration' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]: Unsatisfied dependency expressed through method 'securityFilterChainRegistration' parameter 0: Error creating bean with name 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties': Could not bind properties to 'SecurityProperties' : prefix=spring.security, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-09-14 12:03:55 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-09-14 12:03:55 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-09-14 12:03:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-14 12:03:55 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.security.user.password' to java.lang.String:
+
+    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.security.user.password' to java.lang.String
+
+Action:
+
+Update your application's configuration
+
+2024-09-14 12:04:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-14 12:04:39 [main] INFO  c.m.api.config.server.ConfigServer - Starting ConfigServer using Java 21.0.2 with PID 73370 (/Users/amanbhardwaj/Desktop/microservices-api/config-server/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-14 12:04:39 [main] INFO  c.m.api.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-09-14 12:04:39 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=225f4542-5564-35b3-a969-ba4fb822fdb7
+2024-09-14 12:04:39 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:04:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:04:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-09-14 12:04:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-09-14 12:04:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-14 12:04:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-14 12:04:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-14 12:04:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 696 ms
+2024-09-14 12:04:40 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-09-14 12:04:40 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-09-14 12:04:40 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-09-14 12:04:40 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-09-14 12:04:40 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-09-14 12:04:40 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityFilterChainRegistration' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]: Unsatisfied dependency expressed through method 'securityFilterChainRegistration' parameter 0: Error creating bean with name 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties': Could not bind properties to 'SecurityProperties' : prefix=spring.security, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-09-14 12:04:40 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-09-14 12:04:40 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-09-14 12:04:40 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-14 12:04:40 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.security.user.password' to java.lang.String:
+
+    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.security.user.password' to java.lang.String
+
+Action:
+
+Update your application's configuration
+
+2024-09-14 12:06:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-14 12:06:26 [main] INFO  c.m.api.config.server.ConfigServer - Starting ConfigServer using Java 21.0.2 with PID 73764 (/Users/amanbhardwaj/Desktop/microservices-api/config-server/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-14 12:06:26 [main] INFO  c.m.api.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-09-14 12:06:27 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=225f4542-5564-35b3-a969-ba4fb822fdb7
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-09-14 12:06:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-09-14 12:06:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-09-14 12:06:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-14 12:06:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-14 12:06:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-14 12:06:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 705 ms
+2024-09-14 12:06:27 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-09-14 12:06:27 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-09-14 12:06:27 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-09-14 12:06:27 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2024-09-14 12:06:27 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-09-14 12:06:27 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityFilterChainRegistration' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]: Unsatisfied dependency expressed through method 'securityFilterChainRegistration' parameter 0: Error creating bean with name 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties': Could not bind properties to 'SecurityProperties' : prefix=spring.security, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-09-14 12:06:27 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-09-14 12:06:27 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-09-14 12:06:27 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-14 12:06:27 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.security.user.password' to java.lang.String:
+
+    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.security.user.password' to java.lang.String
+
+Action:
+
+Update your application's configuration
+

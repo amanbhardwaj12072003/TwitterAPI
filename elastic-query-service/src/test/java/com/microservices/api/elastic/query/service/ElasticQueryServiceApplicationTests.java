@@ -6,6 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class ElasticQueryServiceApplicationTests {
     @Test
-    public void contextLoads(){
+    public void contextLoads() {
     }
 }

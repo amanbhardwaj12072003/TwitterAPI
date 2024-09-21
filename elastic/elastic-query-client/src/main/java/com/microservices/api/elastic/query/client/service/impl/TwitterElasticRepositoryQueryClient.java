@@ -13,8 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Primary
-@Service
+//@Service
 public class TwitterElasticRepositoryQueryClient implements ElasticQueryClient<TwitterIndexModel> {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterElasticRepositoryQueryClient.class);
