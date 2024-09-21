@@ -27,6 +27,7 @@
 		<module>elastic</module>
 		<module>elastic/elastic-config</module>
 		<module>common-util</module>
+		<module>elastic-query-service</module>
 		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
@@ -130,6 +131,12 @@
 			<dependency>
 				<groupId>com.microservices.api</groupId>
 				<artifactId>common-util</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.api</groupId>
+				<artifactId>elastic-query-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
