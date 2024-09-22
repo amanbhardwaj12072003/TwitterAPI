@@ -62,6 +62,7 @@
 		<spring-cloud-starter-bootstrap.version>4.1.4</spring-cloud-starter-bootstrap.version>
 		<elasticsearch.version>7.17.24</elasticsearch.version>
 		<validation.version>3.3.4</validation.version>
+		<hateoas.version>3.3.4</hateoas.version>
 
 	</properties>
 
@@ -239,6 +240,13 @@
 				<artifactId>spring-boot-starter-aop</artifactId>
 				<version>${spring-boot-starter-aop.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-hateoas</artifactId>
+				<version>${hateoas.version}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
