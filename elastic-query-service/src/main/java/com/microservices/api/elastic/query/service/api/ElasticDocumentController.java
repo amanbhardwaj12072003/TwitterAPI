@@ -74,7 +74,7 @@ public class ElasticDocumentController {
             @ApiResponse(responseCode = "400", description = "Not found."),
             @ApiResponse(responseCode = "500", description = "Internal server error.")
     })
-    @GetMapping(value = "/{id}", produces = "application/vnd.api.v1+json")
+    @GetMapping(value = "/{id}", produces = "application/vnd.api.v2+json")
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceResponseModelV2> getDocumentByIdV2(@PathVariable @NotEmpty String id){
         ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);

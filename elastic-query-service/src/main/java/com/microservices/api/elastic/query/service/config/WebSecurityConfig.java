@@ -35,7 +35,7 @@ public class WebSecurityConfig{
         httpSecurity
                 .httpBasic(Customizer.withDefaults())
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers(pathsToIgnore).permitAll()
+                        .requestMatchers("/api-docs").permitAll()
                         .requestMatchers("/**").hasRole("USER")
                 )
                 .csrf(csrf -> csrf.disable());

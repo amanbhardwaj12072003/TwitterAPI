@@ -28,6 +28,7 @@
 		<module>elastic/elastic-config</module>
 		<module>common-util</module>
 		<module>elastic-query-service</module>
+		<module>elastic-query-web-client</module>
 		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
@@ -64,6 +65,8 @@
 		<validation.version>3.3.4</validation.version>
 		<hateoas.version>3.3.4</hateoas.version>
 		<springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
+		<spring-boot-starter-thymeleaf.version>3.3.4</spring-boot-starter-thymeleaf.version>
+		<thymeleaf-extras-springsecurity5.version>3.1.2.RELEASE</thymeleaf-extras-springsecurity5.version>
 
 	</properties>
 
@@ -212,6 +215,18 @@
 			</dependency>
 
 			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+				<version>${spring-boot-starter-thymeleaf.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.thymeleaf.extras</groupId>
+				<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+				<version>${thymeleaf-extras-springsecurity5.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-avro-serializer</artifactId>
 				<version>${kafka-avro-serializer.version}</version>
@@ -310,8 +325,6 @@
 				<artifactId>elasticsearch-rest-high-level-client</artifactId>
 				<version>${elasticsearch.version}</version>
 			</dependency>
-
-
 
 		</dependencies>
 	</dependencyManagement>
