@@ -63,6 +63,7 @@
 		<elasticsearch.version>7.17.24</elasticsearch.version>
 		<validation.version>3.3.4</validation.version>
 		<hateoas.version>3.3.4</hateoas.version>
+		<springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
 
 	</properties>
 
@@ -204,6 +205,11 @@
 				<version>${validation.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc-openapi-ui.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>io.confluent</groupId>
