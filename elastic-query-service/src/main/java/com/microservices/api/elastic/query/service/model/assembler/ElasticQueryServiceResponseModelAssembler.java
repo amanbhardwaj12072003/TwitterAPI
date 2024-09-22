@@ -5,6 +5,7 @@ import com.microservices.api.elastic.query.service.api.ElasticDocumentController
 import com.microservices.api.elastic.query.service.model.ElasticQueryServiceResponseModel;
 import com.microservices.api.elastic.query.service.transformer.ElasticToResponseModelTransformer;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,6 +13,7 @@ import java.util.stream.Collectors;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+@Component
 public class ElasticQueryServiceResponseModelAssembler
         extends RepresentationModelAssemblerSupport<TwitterIndexModel, ElasticQueryServiceResponseModel> {
 
