@@ -1,6 +1,6 @@
 package com.microservices.api.elastic.query.service.business;
 
-import com.microservices.api.elastic.query.service.model.ElasticQueryServiceResponseModel;
+import com.microservices.api.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 
 import java.util.List;
 

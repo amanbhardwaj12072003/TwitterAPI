@@ -1,8 +1,8 @@
 package com.microservices.api.elastic.query.service.api;
 
 import com.microservices.api.elastic.query.service.business.ElasticQueryService;
-import com.microservices.api.elastic.query.service.model.ElasticQueryServiceRequestModel;
-import com.microservices.api.elastic.query.service.model.ElasticQueryServiceResponseModel;
+import com.microservices.api.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
+import com.microservices.api.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import com.microservices.api.elastic.query.service.model.ElasticQueryServiceResponseModelV2;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -17,7 +17,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

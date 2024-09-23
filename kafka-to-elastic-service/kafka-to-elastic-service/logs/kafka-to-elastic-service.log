@@ -2040,3 +2040,939 @@ org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exit
 2024-09-23 18:10:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
 2024-09-23 18:10:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
 2024-09-23 18:10:30 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-23 18:50:39 [main] INFO  c.m.a.k.t.e.s.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 21.0.2 with PID 24541 (/Users/amanbhardwaj/Desktop/microservices-api/kafka-to-elastic-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api/kafka-to-elastic-service)
+2024-09-23 18:50:39 [main] INFO  c.m.a.k.t.e.s.KafkaToElasticServiceApplication - The following 1 profile is active: "kafka_to_elastic"
+2024-09-23 18:50:39 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-23 18:50:39 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service,config-client, profiles=[default], label=null, version=8659b4f0c6d4aa6d167d240ccd9f71641be877f7, state=null
+2024-09-23 18:50:39 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-23 18:50:39 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=8659b4f0c6d4aa6d167d240ccd9f71641be877f7, state=null
+2024-09-23 18:50:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-23 18:50:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 Elasticsearch repository interface.
+2024-09-23 18:50:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-09-23 18:50:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-09-23 18:50:40 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fc3b3637-5a55-3f10-b330-52597f94e507
+2024-09-23 18:50:40 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-23 18:50:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-23 18:50:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-23 18:50:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1727097640616
+2024-09-23 18:50:41 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:50:41 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8f7a0a72-04c9-4e93-ad8e-28abe8a979e0
+
+2024-09-23 18:50:41 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8182 (http)
+2024-09-23 18:50:41 [main] INFO  c.m.a.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 5.525 seconds (process running for 5.781)
+2024-09-23 18:50:41 [main] INFO  c.m.a.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempts 0
+2024-09-23 18:50:41 [main] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic is ready for operations!
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - These configurations '[specific.avro.reader, schema.registry.url]' were supplied but are not used yet.
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1727097641618
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - These configurations '[specific.avro.reader, schema.registry.url]' were supplied but are not used yet.
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1727097641634
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - These configurations '[specific.avro.reader, schema.registry.url]' were supplied but are not used yet.
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2024-09-23 18:50:41 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Cluster ID: JEi8BwmEQtaV2YXtuhvemA
+2024-09-23 18:50:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1727097641644
+2024-09-23 18:50:41 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2024-09-23 18:50:41 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Cluster ID: JEi8BwmEQtaV2YXtuhvemA
+2024-09-23 18:50:41 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Cluster ID: JEi8BwmEQtaV2YXtuhvemA
+2024-09-23 18:50:41 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2024-09-23 18:50:41 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2024-09-23 18:50:41 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:41 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:41 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2024-09-23 18:50:41 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:41 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id: consumer-twitter-topic-consumer-1-5563ea81-ddc1-4dc1-b13a-8c01a5b01583
+2024-09-23 18:50:41 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:41 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id: consumer-twitter-topic-consumer-2-acc4f435-a985-476b-bdde-287277604596
+2024-09-23 18:50:41 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:41 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id: consumer-twitter-topic-consumer-3-e75e1640-c0a2-4122-a936-cf9818724769
+2024-09-23 18:50:41 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] (Re-)joining group
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-1-5563ea81-ddc1-4dc1-b13a-8c01a5b01583', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-3-e75e1640-c0a2-4122-a936-cf9818724769', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-2-acc4f435-a985-476b-bdde-287277604596', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Finished assignment for group at generation 1: {consumer-twitter-topic-consumer-3-e75e1640-c0a2-4122-a936-cf9818724769=Assignment(partitions=[twitter-topic-2]), consumer-twitter-topic-consumer-1-5563ea81-ddc1-4dc1-b13a-8c01a5b01583=Assignment(partitions=[twitter-topic-0]), consumer-twitter-topic-consumer-2-acc4f435-a985-476b-bdde-287277604596=Assignment(partitions=[twitter-topic-1])}
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-3-e75e1640-c0a2-4122-a936-cf9818724769', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-2])
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-1-5563ea81-ddc1-4dc1-b13a-8c01a5b01583', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-2-acc4f435-a985-476b-bdde-287277604596', protocol='range'}
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-0])
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-1])
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-0
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-1
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-2
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-2
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-0
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-1
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2024-09-23 18:50:47 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-0]
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=0}}.
+2024-09-23 18:50:47 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-1]
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=0}}.
+2024-09-23 18:50:47 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-2]
+2024-09-23 18:50:48 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6176950674341778281], partitions [0] and offsets [0], sending it to elastic: Thread id 49
+2024-09-23 18:50:48 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 2 number of message received with keys [8177406247803987867, 4833331992708924113], partitions [1, 1] and offsets [0, 1], sending it to elastic: Thread id 51
+2024-09-23 18:50:48 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:50:48 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:50:48 [twitter-topic-consumer-0-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [3141879836657305344]
+2024-09-23 18:50:48 [twitter-topic-consumer-1-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [7796807217109669130, 1423347719461192178]
+2024-09-23 18:50:48 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3141879836657305344
+2024-09-23 18:50:48 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7796807217109669130
+2024-09-23 18:50:51 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3669818188315952658], partitions [0] and offsets [1], sending it to elastic: Thread id 49
+2024-09-23 18:50:51 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:50:51 [twitter-topic-consumer-0-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [2702686000197465733]
+2024-09-23 18:50:51 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2702686000197465733
+2024-09-23 18:51:01 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4617930637633687706], partitions [2] and offsets [0], sending it to elastic: Thread id 53
+2024-09-23 18:51:01 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:01 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [3888810830465912347]
+2024-09-23 18:51:01 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3888810830465912347
+2024-09-23 18:51:11 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8230834148274436094], partitions [0] and offsets [2], sending it to elastic: Thread id 49
+2024-09-23 18:51:11 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:11 [twitter-topic-consumer-0-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [3724061071788184163]
+2024-09-23 18:51:11 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3724061071788184163
+2024-09-23 18:51:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7867964415070506307], partitions [1] and offsets [2], sending it to elastic: Thread id 51
+2024-09-23 18:51:21 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [8152770236044501606]
+2024-09-23 18:51:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8152770236044501606
+2024-09-23 18:51:31 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8229357813217008909], partitions [1] and offsets [3], sending it to elastic: Thread id 51
+2024-09-23 18:51:31 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:31 [twitter-topic-consumer-1-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [2936020712520550178]
+2024-09-23 18:51:31 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2936020712520550178
+2024-09-23 18:51:41 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8924147812312905774], partitions [0] and offsets [3], sending it to elastic: Thread id 49
+2024-09-23 18:51:41 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:41 [twitter-topic-consumer-0-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [7511247512023393785]
+2024-09-23 18:51:41 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7511247512023393785
+2024-09-23 18:51:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [911443835228390576], partitions [2] and offsets [1], sending it to elastic: Thread id 53
+2024-09-23 18:51:51 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:51:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [5121728954351624404]
+2024-09-23 18:51:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5121728954351624404
+2024-09-23 18:52:01 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1714064206248235528], partitions [0] and offsets [4], sending it to elastic: Thread id 49
+2024-09-23 18:52:01 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:01 [twitter-topic-consumer-0-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [6460431374136901645]
+2024-09-23 18:52:01 [twitter-topic-consumer-0-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6460431374136901645
+2024-09-23 18:52:11 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [9175367851568806639], partitions [2] and offsets [2], sending it to elastic: Thread id 53
+2024-09-23 18:52:11 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:11 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [7907709366662135562]
+2024-09-23 18:52:11 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7907709366662135562
+2024-09-23 18:52:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2424122154037969209], partitions [1] and offsets [4], sending it to elastic: Thread id 51
+2024-09-23 18:52:21 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [6527921510132777677]
+2024-09-23 18:52:21 [twitter-topic-consumer-1-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6527921510132777677
+2024-09-23 18:52:31 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2383878636570633454], partitions [2] and offsets [3], sending it to elastic: Thread id 53
+2024-09-23 18:52:31 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:31 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [5185675011771938271]
+2024-09-23 18:52:31 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5185675011771938271
+2024-09-23 18:52:41 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4414435969908666384], partitions [2] and offsets [4], sending it to elastic: Thread id 53
+2024-09-23 18:52:41 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:41 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [8277377661425389234]
+2024-09-23 18:52:41 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8277377661425389234
+2024-09-23 18:52:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1086042496957112412], partitions [2] and offsets [5], sending it to elastic: Thread id 53
+2024-09-23 18:52:51 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/_bulk?refresh=false] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 18:52:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.api.elastic.model.index.impl.TwitterIndexModel and ids: [1974839514824220513]
+2024-09-23 18:52:51 [twitter-topic-consumer-2-C-1] INFO  c.m.a.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1974839514824220513
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-0
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-2
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-1
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-0]
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-1]
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-2]
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-1-5563ea81-ddc1-4dc1-b13a-8c01a5b01583 sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-3-e75e1640-c0a2-4122-a936-cf9818724769 sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-2-acc4f435-a985-476b-bdde-287277604596 sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-2 unregistered
+2024-09-23 18:53:02 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-1 unregistered
+2024-09-23 18:53:02 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-3 unregistered
+2024-09-23 18:53:02 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2024-09-23 18:53:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2024-09-23 18:53:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-09-23 18:53:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-23 18:53:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
