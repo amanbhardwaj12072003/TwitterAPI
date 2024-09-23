@@ -72,6 +72,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.microservices.api</groupId>
+            <artifactId>elastic-query-web-client-common</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

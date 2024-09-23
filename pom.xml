@@ -30,7 +30,8 @@
 		<module>elastic-query-service</module>
 		<module>elastic-query-web-client</module>
         <module>elastic-query-service-common</module>
-        <!--		<module>playground</module>-->
+		<module>elastic-query-web-client-common</module>
+		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
 	<url/>
@@ -150,6 +151,12 @@
 			<dependency>
 				<groupId>com.microservices.api</groupId>
 				<artifactId>elastic-query-service-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.api</groupId>
+				<artifactId>elastic-query-web-client-common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
