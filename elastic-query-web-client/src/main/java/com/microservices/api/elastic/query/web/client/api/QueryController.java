@@ -32,6 +32,7 @@ public class QueryController {
     public String home(Model model) {
         model.addAttribute("elasticQueryWebClientRequestModel",
                 ElasticQueryWebClientRequestModel.builder().build());
+
         return "home";
     }
 
