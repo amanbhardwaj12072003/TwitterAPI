@@ -1056,3 +1056,34 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2024-09-23 01:19:30 [http-nio-8183-exec-9] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/twitter-index/_search?search_type=query_then_fetch&typed_keys=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
 2024-09-23 01:19:30 [http-nio-8183-exec-9] INFO  c.m.a.e.q.c.s.i.TwitterElasticQueryClient - Document with id 1 retrieved successfully
 2024-09-23 01:19:30 [http-nio-8183-exec-9] INFO  c.m.a.e.q.s.a.ElasticDocumentController - Elasticsearch returned document with id: 2590358070139713095
+2024-09-23 16:59:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-23 16:59:42 [main] INFO  c.m.a.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 21.0.2 with PID 10991 (/Users/amanbhardwaj/Desktop/microservices-api/elastic-query-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api/elastic-query-service)
+2024-09-23 16:59:42 [main] INFO  c.m.a.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2024-09-23 16:59:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-23 16:59:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[default], label=null, version=916e2842190405c300b3550d01729f17934b62e1, state=null
+2024-09-23 16:59:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-23 16:59:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=916e2842190405c300b3550d01729f17934b62e1, state=null
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Elasticsearch repository interfaces.
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-09-23 16:59:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-09-23 16:59:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0d31ee9d-ff01-311a-89bd-c631b053f763
+2024-09-23 16:59:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8183 (http)
+2024-09-23 16:59:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2024-09-23 16:59:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-23 16:59:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-23 16:59:42 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2024-09-23 16:59:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 677 ms
+2024-09-23 16:59:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-09-23 16:59:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2024-09-23 16:59:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8183 (http) with context path '/elastic-query-service'
+2024-09-23 16:59:43 [main] INFO  c.m.a.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 4.736 seconds (process running for 4.975)
+2024-09-23 17:00:31 [http-nio-8183-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-23 17:00:31 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-23 17:00:31 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2024-09-23 17:00:31 [http-nio-8183-exec-1] INFO  c.m.a.e.q.s.b.i.TwitterElasticQueryService - Querying elasticsearch by text: kafka
+2024-09-23 17:00:32 [http-nio-8183-exec-1] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/twitter-index/_search?search_type=query_then_fetch&typed_keys=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-23 17:00:32 [http-nio-8183-exec-1] INFO  c.m.a.e.q.c.s.i.TwitterElasticQueryClient - 69 of documents with text [kafka] retrieved successfully
+2024-09-23 17:00:32 [http-nio-8183-exec-1] INFO  c.m.a.e.q.s.a.ElasticDocumentController - Elastic search returned 10 documents
