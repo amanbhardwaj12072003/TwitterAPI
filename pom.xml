@@ -31,7 +31,8 @@
 		<module>elastic-query-web-client</module>
         <module>elastic-query-service-common</module>
 		<module>elastic-query-web-client-common</module>
-		<!--		<module>playground</module>-->
+        <module>reactive-elastic-query-service</module>
+        <!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
 	<url/>
