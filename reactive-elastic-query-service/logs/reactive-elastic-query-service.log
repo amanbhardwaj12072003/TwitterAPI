@@ -1,0 +1,103 @@
+2024-09-25 13:27:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-25 13:27:07 [main] INFO  com.microservices.api.reactive.elastic.query.service.ReactiveElasticQueryServiceApplication - Starting com.microservices.api.reactive.elastic.query.service.ReactiveElasticQueryServiceApplication using Java 21.0.2 with PID 73760 (/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-25 13:27:07 [main] INFO  com.microservices.api.reactive.elastic.query.service.ReactiveElasticQueryServiceApplication - The following 1 profile is active: "reactive_elastic_query"
+2024-09-25 13:27:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:27:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[default], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:27:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:27:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[reactive_elastic_query], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:27:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:27:08 [main] WARN  o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the default package. Automatic @Repository and @Entity scanning is not enabled.
+2024-09-25 13:27:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2024-09-25 13:27:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:27:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-09-25 13:27:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=65552d75-8efd-37c8-a572-0d894ad891e0
+2024-09-25 13:27:08 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes/com/microservices/api/reactive/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterElasticQueryService' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes/com/microservices/api/reactive/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterReactiveElasticQueryClient' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes/com/microservices/api/reactive/elastic/query/service/business/impl/TwitterReactiveElasticQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.microservices.api.reactive.elastic.query.service.repository.ElasticQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-09-25 13:27:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-25 13:27:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.api.reactive.elastic.query.service.business.impl.TwitterReactiveElasticQueryClient required a bean of type 'com.microservices.api.reactive.elastic.query.service.repository.ElasticQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.api.reactive.elastic.query.service.repository.ElasticQueryRepository' in your configuration.
+
+2024-09-25 13:31:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-25 13:31:07 [main] INFO  c.m.a.r.e.q.s.ReactiveElasticQueryServiceApplication - Starting ReactiveElasticQueryServiceApplication using Java 21.0.2 with PID 74471 (/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-25 13:31:07 [main] INFO  c.m.a.r.e.q.s.ReactiveElasticQueryServiceApplication - The following 1 profile is active: "reactive_elastic_query"
+2024-09-25 13:31:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:31:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[default], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:31:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:31:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[reactive_elastic_query], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 0 Elasticsearch repository interfaces.
+2024-09-25 13:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:31:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 Reactive Elasticsearch repository interface.
+2024-09-25 13:31:07 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5fcc5d77-4915-3027-bd08-989c8ddb5e6c
+2024-09-25 13:31:08 [elasticsearch-rest-client-0-thread-2] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-25 13:31:08 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes/com/microservices/api/reactive/elastic/query/service/config/WebClientConfig.class]: Failed to instantiate [com.microservices.api.reactive.elastic.query.service.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+2024-09-25 13:31:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-25 13:31:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes/com/microservices/api/reactive/elastic/query/service/config/WebClientConfig.class]: Failed to instantiate [com.microservices.api.reactive.elastic.query.service.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.api.reactive.elastic.query.service.ReactiveElasticQueryServiceApplication.main(ReactiveElasticQueryServiceApplication.java:11)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.microservices.api.reactive.elastic.query.service.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: WebClientConfig is null. Check your configuration properties.
+	at com.microservices.api.reactive.elastic.query.service.config.WebClientConfig.<init>(WebClientConfig.java:31)
+	at com.microservices.api.reactive.elastic.query.service.config.WebClientConfig$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	... 21 common frames omitted
+2024-09-25 13:39:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-25 13:39:38 [main] INFO  c.m.a.r.e.q.s.ReactiveElasticQueryServiceApplication - Starting ReactiveElasticQueryServiceApplication using Java 21.0.2 with PID 74830 (/Users/amanbhardwaj/Desktop/microservices-api/reactive-elastic-query-service/target/classes started by amanbhardwaj in /Users/amanbhardwaj/Desktop/microservices-api)
+2024-09-25 13:39:38 [main] INFO  c.m.a.r.e.q.s.ReactiveElasticQueryServiceApplication - The following 1 profile is active: "reactive_elastic_query"
+2024-09-25 13:39:38 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:39:38 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[default], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:39:38 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-09-25 13:39:38 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-service,config-client, profiles=[reactive_elastic_query], label=null, version=a6dea197a9c4669d543710e1bd3a959ae4075f6c, state=null
+2024-09-25 13:39:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:39:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 0 Elasticsearch repository interfaces.
+2024-09-25 13:39:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-09-25 13:39:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 Reactive Elasticsearch repository interface.
+2024-09-25 13:39:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c70327bc-f81e-354d-ab76-8100176eb7be
+2024-09-25 13:39:39 [elasticsearch-rest-client-0-thread-2] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2024-09-25 13:39:39 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c8e4cc58-7965-4d4f-aa05-9a991aa63878
+
+2024-09-25 13:39:39 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8183 (http)
+2024-09-25 13:39:39 [main] INFO  c.m.a.r.e.q.s.ReactiveElasticQueryServiceApplication - Started ReactiveElasticQueryServiceApplication in 5.752 seconds (process running for 6.147)

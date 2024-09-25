@@ -11,7 +11,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "com.microservices.api.elastic.index.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.microservices.api.elastic")
 public class ElasticsearchConfig extends ElasticsearchConfiguration {
     private final ElasticConfigData elasticConfigData;
     public ElasticsearchConfig(ElasticConfigData configData) {

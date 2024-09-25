@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div th:replace="~{header}"></div>
+
+<div class="container mt-5 float-left">
+    <div>
+        <p><a th:href="@{/home}" class="btn btn-primary">Let's get started searching!</a></p>
+    </div>
+</div>
+
+<div th:replace="~{footer}"></div>
+</body>
+</html>
