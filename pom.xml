@@ -34,6 +34,7 @@
         <module>reactive-elastic-query-service</module>
         <module>reactive-elastic-query-web-client</module>
         <module>elastic-query-web-client-2</module>
+        <module>kafka-stream-service</module>
         <!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
@@ -74,6 +75,7 @@
 		<thymeleaf-extras-springsecurity5.version>3.1.2.RELEASE</thymeleaf-extras-springsecurity5.version>
 		<oauth2.version>3.3.4</oauth2.version>
 		<postgresql.version>42.7.4</postgresql.version>
+		<kafka-streams-avro-serde.version>7.7.1</kafka-streams-avro-serde.version>
 
 	</properties>
 
@@ -363,6 +365,13 @@
 				<artifactId>elasticsearch-rest-high-level-client</artifactId>
 				<version>${elasticsearch.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-streams-avro-serde</artifactId>
+				<version>${kafka-streams-avro-serde.version}</version>
+			</dependency>
+
 
 		</dependencies>
 	</dependencyManagement>

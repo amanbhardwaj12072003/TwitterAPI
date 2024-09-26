@@ -11,7 +11,7 @@ CREATE TABLE public.users
 
     TABLESPACE pg_default;
 
-ALTER TABLE public.users
+ALTER TABLE public.usersi
     OWNER to postgres;
 
 DROP TABLE IF EXISTS public.documents CASCADE;
