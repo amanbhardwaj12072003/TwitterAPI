@@ -48,7 +48,7 @@ public class ElasticQueryWebClientErrorHandler {
     public String handle(RuntimeException e, Model model) {
         LOG.error("Service runtime exception!", e);
         model.addAttribute("elasticQueryWebClientRequestModel", ElasticQueryWebClientRequestModel.builder().build());
-        model.addAttribute("error", "Could not get response! " + e.getMessage());
+        model.addAttribute("error", "Could not get response! \n " + e.getMessage());
         model.addAttribute("error_description", "Service runtime exception! " + e.getMessage());
         return "home";
     }
