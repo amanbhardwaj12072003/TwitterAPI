@@ -3,7 +3,9 @@ package com.microservices.api.elastic.query.service.api;
 import com.microservices.api.elastic.query.service.business.ElasticQueryService;
 import com.microservices.api.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
 import com.microservices.api.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
+import com.microservices.api.elastic.query.service.model.ElasticQueryServiceAnalyticsResponseModel;
 import com.microservices.api.elastic.query.service.model.ElasticQueryServiceResponseModelV2;
+import com.microservices.api.elastic.query.service.security.TwitterQueryUser;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -17,6 +19,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
+import org.springframework.security.oauth2.client.annotation.RegisteredOAuth2AuthorizedClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -105,9 +110,19 @@ public class ElasticDocumentController {
     })
     @PostMapping("/get-document-by-text")
     public @ResponseBody
-    ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel){
-        List<ElasticQueryServiceResponseModel> response =  elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText());
-        LOG.info("Elastic search returned {} documents on port {}", response.size(), port);
+    ResponseEntity<ElasticQueryServiceAnalyticsResponseModel>
+    getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel,
+                      @AuthenticationPrincipal TwitterQueryUser principal,
+                      @RegisteredOAuth2AuthorizedClient("keycloak")
+                      OAuth2AuthorizedClient oAuth2AuthorizedClient){
+        LOG.info("User {} querying documents for text {}", principal.getUsername(),
+                elasticQueryServiceRequestModel.getText());
+
+        ElasticQueryServiceAnalyticsResponseModel response =
+                elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText(),
+                        oAuth2AuthorizedClient.getAccessToken().getTokenValue());
+        LOG.info("Elasticsearch returned {} of documents on port {}",
+                response.getQueryResponseModels().size(), port);
         return ResponseEntity.ok(response);
     }
 
