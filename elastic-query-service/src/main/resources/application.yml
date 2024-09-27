@@ -12,6 +12,13 @@ spring:
       username: spring_cloud_user
       password: 'Aman0081'
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 2
 
 jasypt:
   encryptor:

@@ -78,7 +78,6 @@
 		<oauth2.version>3.3.4</oauth2.version>
 		<postgresql.version>42.7.4</postgresql.version>
 		<kafka-streams-avro-serde.version>7.7.1</kafka-streams-avro-serde.version>
-		<netflix-eureka-server.version>4.1.3</netflix-eureka-server.version>
 
 	</properties>
 
@@ -271,7 +270,13 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-				<version>${netflix-eureka-server.version}</version>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+				<version>${spring-cloud.version}</version>
 			</dependency>
 
 

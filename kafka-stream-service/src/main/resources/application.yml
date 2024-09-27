@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: kafka-streams-service
+  profiles:
+    active: kafka_streams
+  cloud:
+    config:
+      name: kafka-streams-service,config-client
+      uri: http://localhost:8888
+      username: spring_cloud_user
+      password: 'Aman0081'
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service-1:8761/eureka/, http://discovery-service-2:8762/eureka/

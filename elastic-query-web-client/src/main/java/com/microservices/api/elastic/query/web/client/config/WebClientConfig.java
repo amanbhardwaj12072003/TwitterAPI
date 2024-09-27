@@ -23,7 +23,6 @@ import reactor.netty.tcp.TcpClient;
 import java.util.concurrent.TimeUnit;
 
 @Configuration
-@LoadBalancerClient(name = "elastic-query-service", configuration = ElasticQueryServiceInstanceListSupplierConfig.class)
 public class WebClientConfig {
 
     private final ElasticQueryWebClientConfigData.WebClient elasticQueryWebClientConfigData;
@@ -36,7 +35,6 @@ public class WebClientConfig {
         this.userConfigData = userData;
     }
 
-    @LoadBalanced
     @Bean("webClientBuilder")
     WebClient.Builder webClientBuilder(
             ClientRegistrationRepository clientRegistrationRepository,
