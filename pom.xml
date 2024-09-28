@@ -79,6 +79,7 @@
 		<oauth2.version>3.3.4</oauth2.version>
 		<postgresql.version>42.7.4</postgresql.version>
 		<kafka-streams-avro-serde.version>7.7.1</kafka-streams-avro-serde.version>
+		<micrometer-registry-prometheus.version>1.13.4</micrometer-registry-prometheus.version>
 
 	</properties>
 
@@ -89,9 +90,9 @@
 		</repository>
 	</repositories>
 
+
 	<dependencyManagement>
 		<dependencies>
-
 			<dependency>
 				<groupId>com.microservices.api</groupId>
 				<artifactId>app-config-data</artifactId>
@@ -280,7 +281,11 @@
 				<version>${spring-cloud.version}</version>
 			</dependency>
 
-
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>${micrometer-registry-prometheus.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>io.confluent</groupId>
@@ -388,10 +393,8 @@
 				<version>${kafka-streams-avro-serde.version}</version>
 			</dependency>
 
-
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
