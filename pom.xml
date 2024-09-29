@@ -38,7 +38,8 @@
         <module>analytics-service</module>
         <module>discovery-service</module>
         <module>gateway-service</module>
-        <!--		<module>playground</module>-->
+		<module>mdc-interceptor</module>
+		<!--		<module>playground</module>-->
 	</modules>
 	<packaging>pom</packaging>
 	<url/>
@@ -80,6 +81,7 @@
 		<postgresql.version>42.7.4</postgresql.version>
 		<kafka-streams-avro-serde.version>7.7.1</kafka-streams-avro-serde.version>
 		<micrometer-registry-prometheus.version>1.13.4</micrometer-registry-prometheus.version>
+		<logstash-logback-encoder.version>8.0</logstash-logback-encoder.version>
 
 	</properties>
 
@@ -89,6 +91,13 @@
 			<url>https://packages.confluent.io/maven/</url>
 		</repository>
 	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+		</dependency>
+	</dependencies>
 
 
 	<dependencyManagement>
@@ -168,6 +177,12 @@
 			<dependency>
 				<groupId>com.microservices.api</groupId>
 				<artifactId>elastic-query-web-client-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.api</groupId>
+				<artifactId>mdc-interceptor</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
@@ -286,6 +301,13 @@
 				<artifactId>micrometer-registry-prometheus</artifactId>
 				<version>${micrometer-registry-prometheus.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>net.logstash.logback</groupId>
+				<artifactId>logstash-logback-encoder</artifactId>
+				<version>${logstash-logback-encoder.version}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>io.confluent</groupId>
