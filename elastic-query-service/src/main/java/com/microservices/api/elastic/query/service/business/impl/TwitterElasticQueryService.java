@@ -24,6 +24,9 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+import static com.microservices.api.mdc.Constants.CORRELATION_ID_HEADER;
+import static com.microservices.api.mdc.Constants.CORRELATION_ID_KEY;
+
 
 @Service
 public class TwitterElasticQueryService implements ElasticQueryService {
@@ -89,7 +92,7 @@ public class TwitterElasticQueryService implements ElasticQueryService {
                 .uri(query.getUri(), uriBuilder -> uriBuilder.build(text))
                 .headers(h -> {
                     h.setBearerAuth(accessToken);
-//                    h.set(CORRELATION_ID_HEADER, MDC.get(CORRELATION_ID_KEY));
+                    h.set(CORRELATION_ID_HEADER, MDC.get(CORRELATION_ID_KEY));
                 })
                 .accept(MediaType.valueOf(query.getAccept()))
                 .retrieve()
